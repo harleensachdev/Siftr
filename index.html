@@ -232,14 +232,20 @@
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid var(--border-mid);
-    max-width: 600px;
+
+    max-width: 520px;
+    max-height: 560px;
+
     margin-left: auto;
     margin-right: auto;
 }
-  .video-wrap video {
+.video-wrap video {
     width: 100%;
+    height: auto;
+    max-height: 560px;
+    object-fit: cover;
     display: block;
-  }
+}
   .video-caption {
     margin-top: 18px; font-size: 14px;
     color: var(--brown-light); text-align: center;
@@ -422,18 +428,18 @@
   <div class="nav-links">
     <a href="#how" class="nav-link">How it works</a>
     <a href="#who" class="nav-link">Who it's for</a>
-    <a href="#early-access" class="nav-cta">Join the Beta</a>
+    <a href="#early-access" class="nav-cta">Get Early Access</a>
   </div>
 </nav>
 
 <div class="hero-outer">
   <div class="hero-content">
-    <div class="hero-badge"><span class="badge-dot"></span>Beta launching soon</div>
-    <h1>Scan the shelf.<br><em>Skip the stress.</em></h1>
-    <p class="hero-p">Point your camera at any supermarket shelf and instantly see which products are safe for your dietary needs.</p>
+    <div class="hero-badge"><span class="badge-dot"></span>Free early access opening soon</div>
+    <h1>Scan the shelf.<br><em>Know what's safe.</em></h1>
+    <p class="hero-p">Scan a supermarket shelf and instantly see which foods match your dietary needs.</p>
     <p class="hero-p">No picking up, no label squinting, no second-guessing.</p>
     <div class="hero-actions">
-      <a href="#early-access" class="btn-primary">Join the Beta</a>
+      <a href="#early-access" class="btn-primary">Get Early Access</a>
       <a href="#how" class="btn-ghost">See how it works</a>
     </div>
     <p class="hero-sub">Free to join &nbsp;·&nbsp; Available soon on iOS &amp; Android</p>
@@ -468,7 +474,7 @@
         <source src="LandingPage.mp4" type="video/mp4">
       </video>
     </div>
-    <p class="video-caption reveal">See Siftr in action — scan a full shelf in seconds.</p>
+    <p class="video-caption reveal">See Siftr in action: scan a full shelf in seconds.</p>
   </div>
 </section>
 
@@ -485,7 +491,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2C5F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
         </div>
         <h3>Set your profile</h3>
-        <p>Tell us what matters — gluten free, vegan, halal, nut allergy and more. Set it once, used on every shop.</p>
+        <p>Tell us what matters: gluten free, vegan, halal, nut allergy and more. Set it once, used on every shop.</p>
       </div>
       <div class="step-card reveal d1">
         <div class="step-num-label">Step 02</div>
@@ -501,7 +507,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2C5F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Read the colours</h3>
-        <p>Green means safe. Red means avoid. Amber means check — because "may contain" means different things to different people. Tap any product for the full detail.</p>
+        <p>Green means safe. Red means avoid. Amber means check, because "may contain" means different things to different people. Tap any product for the full detail.</p>
       </div>
     </div>
 
@@ -573,9 +579,9 @@
 <section class="early-section" id="early-access">
   <div class="early-inner">
     <div>
-      <span class="early-eyebrow reveal">Early access</span>
+      <span class="early-eyebrow reveal">Free early access</span>
       <h2 class="early-title reveal d1">Be the first<br>to try <em>Siftr.</em></h2>
-      <p class="early-desc reveal d2">We're looking for beta testers to try Siftr in real supermarkets. Join the waitlist and you'll hear from us first — before public launch.</p>
+      <p class="early-desc reveal d2">Get free early access to Siftr before public launch. We're inviting a small group of early users to try it in real supermarkets and help shape the app.</p>
       <div class="trust-pills reveal d2">
         <div class="trust-pill">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B7A3E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -593,8 +599,8 @@
     </div>
     <div class="early-form reveal d1">
       <input type="email" placeholder="Enter your email address">
-      <button class="btn-primary" onclick="handleSignup(this)">Join the Beta Waitlist</button>
-      <p class="early-fine">No spam. Just your invite when we're ready.</p>
+      <button class="btn-primary" onclick="handleSignup(this)">Request Early Access</button>
+      <p class="early-fine">No spam. No payment required. Just your invite when early access opens.</p>
     </div>
   </div>
 </section>
